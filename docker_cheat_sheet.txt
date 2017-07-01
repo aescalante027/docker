@@ -1,0 +1,20 @@
+List of commands (docker -<cmd>)
+
+run <image name>: runs Docker container with said image installed. Returns an error if image name does not exist.
+version: returns version number of docker client
+
+NOTE: Below requires sudo access (sudo docker -<cmd>)
+
+images: returns all docker images downloaded onto local machine
+info: returns system level details and totals for docker on local machine
+pull <image name>: downloads image from Docker central
+
+OTHER:
+sudo service docker status: 
+
+Docker run options:
+-p <machine port>:<vm port> - port forwards the vm port in the docker container to the machine port specified
+    EXAMPLE: An nginx server, by default, runs on port 80. We can forward the port on our physical machine to port 8888
+             so that we don't tie the actual port 80 with the container. By using -p 8888:80, we can still access nginx
+             by using "localhost:8888". The container still runs nginx on port 80, but the docker client redirects this
+             port to port 8888.

@@ -1,0 +1,7 @@
+Docker Notes / Terminology
+
+Image - A predefined "read only" layer that contains an application stack bundle and is not
+        defined by state.
+        
+Container - A spin-off of an Image set to "read-write" and is used to configure an Image beyond
+            its default parameters.
