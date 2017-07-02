@@ -3,5 +3,15 @@ Docker Notes / Terminology
 Image - A predefined "read only" layer that contains an application stack bundle and is not
         defined by state.
         
-Container - A spin-off of an Image set to "read-write" and is used to configure an Image beyond
-            its default parameters.
+Container - A spin-off of an Image set to "read-write" and is used to configure an Image 
+            beyond its default parameters.
+
+Interactive containers - Allows the user to use terminal within a container deployed. To 
+                         activate, use “sudo docker run -i -t <image> <directory>”.
+                         Example: “sudo docker run -i -t ubuntu /bin/bash” runs a new 
+                         Ubuntu instance with the bash command terminal active. 
+                         NOTE: bash can appear as “root@<hex>”. The hex value is the host
+                         name given at execution (host name = container ID).
+                         NOTE: to escape an interactive container and keep the instance
+                         running, use CTRL+Q. Use “sudo docker ps” to assure the instance
+                         is still active.  
