@@ -8,11 +8,16 @@ attach <names OR container ID> - returns into interactive mode against target na
 diff <container ID or name> - returns a diff of the current running container versus its stock image version available.
 images - returns all docker images downloaded onto local machine
 info - returns system level details and totals for docker on local machine
+pause <container ID or name> - pauses the running target instance. 
 ps - show all current running containers in Docker
 ps -a - show all current and previous stopped docker containers 
 pull <image name> - downloads image from Docker central
 pull <image name>:<version num> - downloads image from Docker central using a particular version number
-stop <container ID or name> - stop the target container ID or name from running in Docker.  
+start <container ID or name> - starts the target container ID or name from a stopped state in Docker.
+start <container ID or name> -a - starts the target container ID or name from a stopped state with terminal start in 
+                                  Docker. 
+stop <container ID or name> - stop the target container ID or name from running in Docker.
+unpause <container ID or name> - unpause (or starts) previously paused Docker instance.    
 
 Docker pull options:
 -a - Downloads all versions of the particular image. WARNING: this option for downloading may cause a larger than usual 
