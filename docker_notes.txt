@@ -14,4 +14,5 @@ Interactive containers - Allows the user to use terminal within a container depl
                          name given at execution (host name = container ID).
                          NOTE: to escape an interactive container and keep the instance
                          running, use CTRL+Q. Use “sudo docker ps” to assure the instance
-                         is still active.  
+                         ipwd
+s still active.  
