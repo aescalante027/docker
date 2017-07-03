@@ -13,6 +13,7 @@ ps - show all current running containers in Docker
 ps -a - show all current and previous stopped docker containers 
 pull <image name> - downloads image from Docker central
 pull <image name>:<version num> - downloads image from Docker central using a particular version number
+rm <container ID or name> - removes all data tied to a stopped instance by the target name or container ID.  
 start <container ID or name> - starts the target container ID or name from a stopped state in Docker.
 start <container ID or name> -a - starts the target container ID or name from a stopped state with terminal start in 
                                   Docker. 
@@ -30,4 +31,5 @@ Docker run options:
              so that we don't tie the actual port 80 with the container. By using -p 8888:80, we can still access nginx
              by using "localhost:8888". The container still runs nginx on port 80, but the docker client redirects this
              port to port 8888.
+—-rm - informs docker to delete the container as soon as the instance is stopped automatically.
 -t - adds pseudo terminal to the container under “run”

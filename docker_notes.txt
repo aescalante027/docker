@@ -14,5 +14,8 @@ Interactive containers - Allows the user to use terminal within a container depl
                          name given at execution (host name = container ID).
                          NOTE: to escape an interactive container and keep the instance
                          running, use CTRL+Q. Use “sudo docker ps” to assure the instance
-                         ipwd
-s still active.  
+                         is still active.
+
+Stopped vs Removed - Stopping a docker instance will result in a saved state, but will still
+                     Take up disk space. Removing a docker instance will not only stop the
+                     Instance but also remove any data tied to it.   
