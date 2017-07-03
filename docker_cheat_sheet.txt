@@ -5,6 +5,9 @@ version - returns version number of docker client
 NOTE: Below requires sudo access (sudo docker -<cmd>)
 attach <names OR container ID> - returns into interactive mode against target name or container ID. (NOTE: you may need
                                  to press enter again after execution to see command prompt.)
+commit <container name or ID> <proposed name> - creates a Docker image out of the target container name or ID to an image
+                                                Named by the proposed name. 
+container prune - removes data of all stopped instances in Docker 
 diff <container ID or name> - returns a diff of the current running container versus its stock image version available.
 images - returns all docker images downloaded onto local machine
 info - returns system level details and totals for docker on local machine
@@ -25,6 +28,7 @@ Docker pull options:
      download.
 
 Docker run options:
+-d - run in “detached” or daemon mode
 -i - makes container under “run” interactive by grabbing STDIN of the container. 
 -p <machine port>:<vm port> - port forwards the vm port in the docker container to the machine port specified
     EXAMPLE: An nginx server, by default, runs on port 80. We can forward the port on our physical machine to port 8888

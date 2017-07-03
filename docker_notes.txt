@@ -18,4 +18,10 @@ Interactive containers - Allows the user to use terminal within a container depl
 
 Stopped vs Removed - Stopping a docker instance will result in a saved state, but will still
                      Take up disk space. Removing a docker instance will not only stop the
-                     Instance but also remove any data tied to it.   
+                     Instance but also remove any data tied to it. 
+
+Creation of docker images - Docker images can be created interactively using “Docker run” on
+                            A base image, then interacted with it to download other applications
+                            Then saved using docker commit. Alternatively, you can use Dockerfile.
+
+Dockerfile - build script to assemble Docker images from other images and dependencies.   
